@@ -1,13 +1,9 @@
 <?php
 
 
-$data = [];
+$data = "this is me";
 
-    $data['success'] = true;
-    $data['message'] = 'Success!';
-
-
-echo json_encode($data);
+echo $data;
 
 
 

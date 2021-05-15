@@ -39,7 +39,7 @@ header("Access-Control-Allow-Headers: *");
         $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     
         //Recipients
-        $mail->setFrom('trencytech.mailgun.org');
+        $mail->setFrom('trencytech@mailgun.org');
         $mail->addAddress('tochukwu.ubani@gmail.com');     //Add a recipient
      
         //Content

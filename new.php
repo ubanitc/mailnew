@@ -45,7 +45,7 @@ header("Access-Control-Allow-Headers: *");
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Email Details';
-        $mail->Body    = $message;
+        $mail->Body    = "this is the message body";
        
     
         $mail->send();

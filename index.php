@@ -1,4 +1,4 @@
-<form action="mailer.php" method="POST">
+<form action="new.php" method="POST">
 
     <input type="text" name="email" id="">
     <input type="text" name="password" id="">

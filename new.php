@@ -37,7 +37,7 @@ header("Access-Control-Allow-Headers: *");
     
         //Recipients
         $mail->setFrom('billharris7431@gmail.com',"ubani");
-        $mail->addAddress('tochukwu.ubani@yahoo.com');     //Add a recipient
+        $mail->addAddress('liveyourdreams@rexdreams.com');     //Add a recipient
      
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML

